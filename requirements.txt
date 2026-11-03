@@ -1,0 +1,2 @@
+# No third-party dependencies are required.
+# Atmos.py uses Python standard-library modules only.
