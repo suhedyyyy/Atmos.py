@@ -32,9 +32,7 @@ Atmos.py_Project/
 │   ├── EMRE_DEMIR_MUCAHITOGLU_2409011029_Demirmucahitoglu.md
 │   ├── IREM_TOSUN_2409111009_tiremsn.md
 │   └── OZGUR_OZTURK_2409111041_ozgurozt.md
-└── tests/
-    └── test_atmos.py
-```
+└── test_atmos.py
 
 ### File Descriptions
 
@@ -109,7 +107,7 @@ The project includes unit tests written with Python's built-in `unittest` framew
 Run the tests from the project root directory:
 
 ```bash
-python3 -m unittest discover -s tests -v
+python3 -m unittest test_atmos -v
 ```
 
 ## Team Contributions
