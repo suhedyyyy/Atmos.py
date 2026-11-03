@@ -21,27 +21,26 @@ Atmos.py is a command-line weather application written in Python. It uses the Op
 ## Project Structure
 
 ```text
-Atmos.py_Project/
+Atmos.py/
 ├── Atmos.py
 ├── README.md
 ├── requirements.txt
-├── .gitignore
-├── contributions/
-│   ├── SUHEDA_KARADAG_2409011037_suhedyyyy.md
-│   ├── BERRA_VILDAN_ERSIN_2409011033_berraersinn.md
-│   ├── EMRE_DEMIR_MUCAHITOGLU_2409011029_Demirmucahitoglu.md
-│   ├── IREM_TOSUN_2409111009_tiremsn.md
-│   └── OZGUR_OZTURK_2409111041_ozgurozt.md
-└── test_atmos.py
+├── test_atmos.py
+└── contributions/
+    ├── SUHEDA_KARADAG_2409011037_suhedyyyy.md
+    ├── BERRA_VILDAN_ERSIN_2409011033_berraersinn.md
+    ├── EMRE_DEMIR_MUCAHITOGLU_2409011029_Demirmucahitoglu.md
+    ├── IREM_TOSUN_2409111009_tiremsn.md
+    └── OZGUR_OZTURK_2409111041_ozgurozt.md
+```
 
-### File Descriptions
+## File Descriptions
 
 - `Atmos.py`: Main application, including the interactive menu and command-line interface.
-- `requirements.txt`: Notes that no third-party packages are required.
-- `.gitignore`: Excludes Python cache files, virtual environments, and common local editor files.
-- `contributions/`: Contains the individual contribution reports for all five team members.
-- `tests/test_atmos.py`: Contains automated unit tests for selected application behavior.
 - `README.md`: Project documentation and usage instructions.
+- `requirements.txt`: Notes that no third-party packages are required.
+- `test_atmos.py`: Automated unit tests for selected application behavior.
+- `contributions/`: Individual contribution reports for all five team members.
 
 ## Run the Interactive Application
 
@@ -63,19 +62,19 @@ Enter a city name. If multiple locations match, choose the desired result. Then 
 
 The application can also be run directly with command-line arguments, without using the interactive menu.
 
-### Show current weather
+### Show Current Weather
 
 ```bash
 python3 Atmos.py --city "Istanbul" --current
 ```
 
-### Show a three-day forecast
+### Show a Three-Day Forecast
 
 ```bash
 python3 Atmos.py --city "Ankara" --forecast
 ```
 
-### Monitor temperature
+### Monitor Temperature
 
 The following example checks Antalya every five minutes and prints an alert when the temperature exceeds 35 °C:
 
@@ -83,7 +82,7 @@ The following example checks Antalya every five minutes and prints an alert when
 python3 Atmos.py --city "Antalya" --monitor --threshold 35 --interval 5
 ```
 
-### Show available arguments
+### Show Available Arguments
 
 ```bash
 python3 Atmos.py --help
